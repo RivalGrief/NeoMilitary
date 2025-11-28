@@ -1,2 +1,2 @@
 # NeoMilitary Plugin
-Minecraft plugin for military vehicles
+Minecraft plugin for Russian Military Vehicles Pack
