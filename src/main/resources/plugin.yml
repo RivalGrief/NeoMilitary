@@ -1,0 +1,49 @@
+name: MilitaryVehicles
+version: 1.0.0
+main: com.neomilitary.militaryvehicles.MilitaryVehiclesPlugin
+api-version: 1.16
+description: Plugin Russian Military Vehicles Pack
+author: NeoStudio
+
+commands:
+  tank:
+    description: Создать танк
+    usage: /<command> [обозначение]
+    permission: neomilitary.spawn
+  ifv:
+    description: Создать БМП
+    usage: /<command> [обозначение]
+    permission: neomilitary.spawn
+  helicopter:
+    description: Создать вертолет
+    usage: /<command> [обозначение]
+    permission: neomilitary.spawn
+  apc:
+    description: Создать БТР
+    usage: /<command> [обозначение]
+    permission: neomilitary.spawn
+  removevehicle:
+    description: delete your vehicle
+    usage: /<command>
+    permission: neomilitary.remove
+  vehiclestats:
+    description: information
+    usage: /<command>
+    permission: neomilitary.use
+
+permissions:
+  neomilitary.*:
+    description: all permissions
+    children:
+      neomilitary.spawn: true
+      neomilitary.remove: true
+      neomilitary.use: true
+  neomilitary.spawn:
+    description: create vehicle
+    default: op
+  neomilitary.remove:
+    description: delete vehicle
+    default: op
+  neomilitary.use:
+    description: usage vehicle
+    default: op
